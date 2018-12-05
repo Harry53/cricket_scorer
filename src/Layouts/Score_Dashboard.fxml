@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.Score_DashboardController">
+   <children>
+      <Pane layoutX="6.0" layoutY="6.0" prefHeight="502.0" prefWidth="916.0" stylesheets="@../Css_Designs/pane_style.css">
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#796565" />
+         </effect>
+         <children>
+            <TitledPane layoutX="435.0" layoutY="18.0" text="Login Window">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="437.0" prefWidth="457.0">
+                     <children>
+                        <JFXTextField fx:id="txt_username" labelFloat="true" layoutX="139.0" layoutY="114.0" prefHeight="36.0" prefWidth="302.0" promptText="Enter Your Username">
+                           <font>
+                              <Font name="Constantia Bold" size="18.0" />
+                           </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="txt_password" focusColor="#6eee5d" labelFloat="true" layoutX="139.0" layoutY="201.0" prefHeight="35.0" prefWidth="301.0" promptText="Enter Your Password">
+                           <font>
+                              <Font name="Constantia Bold" size="18.0" />
+                           </font>
+                        </JFXPasswordField>
+                        <Label layoutX="16.0" layoutY="115.0" prefHeight="41.0" prefWidth="109.0" text="Username">
+                           <font>
+                              <Font name="Corbel" size="23.0" />
+                           </font>
+                        </Label>
+                        <JFXToggleButton fx:id="toggle_rememberpassword" layoutX="154.0" layoutY="257.0" prefHeight="56.0" prefWidth="286.0" text="Do you want remember Password?">
+                           <font>
+                              <Font name="Georgia Bold" size="12.0" />
+                           </font>
+                        </JFXToggleButton>
+                        <Label layoutX="16.0" layoutY="201.0" prefHeight="40.0" prefWidth="109.0" text="Password">
+                           <font>
+                              <Font name="Corbel" size="23.0" />
+                           </font>
+                        </Label>
+                        <JFXButton layoutX="99.0" layoutY="364.0" lineSpacing="2.0" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #3ed157;" text="Login">
+                           <font>
+                              <Font name="Courier New Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton layoutX="282.0" layoutY="364.0" lineSpacing="2.0" prefHeight="39.0" prefWidth="100.0" style="-fx-background-color: #ef435f;" text="Clear">
+                           <font>
+                              <Font name="Courier New Bold" size="20.0" />
+                           </font>
+                        </JFXButton>
+                        <ImageView fitHeight="83.0" fitWidth="127.0" layoutX="187.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/profle_im.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </TitledPane>
+            <Pane layoutX="38.0" layoutY="34.0" prefHeight="434.0" prefWidth="364.0" style="-fx-border-color: brown;">
+               <children>
+                  <JFXDrawer layoutX="13.0" layoutY="-24.0" prefHeight="49.0" prefWidth="165.0" style="-fx-background-color: #3395e0;" />
+                  <Accordion layoutX="13.0" layoutY="85.0">
+                    <panes>
+                      <TitledPane animated="false" text="Dashboard">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Label layoutX="7.0" prefHeight="34.0" prefWidth="186.0" text="Login Board" AnchorPane.topAnchor="0.0">
+                                       <font>
+                                          <Font name="Consolas Bold" size="14.0" />
+                                       </font>
+                                       <cursor>
+                                          <Cursor fx:constant="HAND" />
+                                       </cursor>
+                                    </Label>
+                                    <Label layoutX="7.0" layoutY="43.0" prefHeight="25.0" prefWidth="186.0" text="Graph Report">
+                                       <font>
+                                          <Font name="Consolas Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="7.0" layoutY="84.0" prefHeight="25.0" prefWidth="186.0" text="Chart Bar">
+                                       <font>
+                                          <Font name="Consolas Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="7.0" layoutY="123.0" prefHeight="25.0" prefWidth="186.0" text="Add Pane">
+                                       <font>
+                                          <Font name="Consolas Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="7.0" layoutY="154.0" prefHeight="25.0" prefWidth="186.0" text="Notifiaction">
+                                       <font>
+                                          <Font name="Consolas Bold" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                           <font>
+                              <Font name="Consolas Bold" size="18.0" />
+                           </font>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Charts">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                           <font>
+                              <Font name="Consolas Bold" size="18.0" />
+                           </font>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Reports">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                           <font>
+                              <Font name="Consolas Bold" size="18.0" />
+                           </font>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" radius="8.5175" spread="0.29" width="15.07" />
+               </effect>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

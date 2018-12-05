@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26 Jun, 2017, 12:57:15 PM
+    Author     : harish
+*/
+
+/*.pane{
+    -fx-background-image: url("/Images/black_background_1920x1080.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}*/
+.root{
+    -fx-background-color: #DDDDDD;
+}
+.cardPane{
+    -fx-background-color: white;
+    -fx-background-radius: 8px;
+}
+.topPane{
+    -fx-background-color:#3196DE;
+}
+
+/*Button Style*/
+.loginbt{
+    -fx-background-color:#3196DE
+}
+.clearbt{
+    -fx-background-color:#d12d08
+}
+
+/*Combo Box*/
+.combo-box-base {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, white;
+    -fx-background-insets: 0 0 -1 0, 0, 2, 2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-font-size: 11pt;
+    -fx-font-weight: BOLD;
+/*    -fx-border-color: #D3D3D3;
+      -fx-border-width: 1 1 1 1;*/
+}
+.combo-box-popup .list-view {
+    -fx-font-size : 11pt;
+}

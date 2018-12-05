@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="759.0" prefWidth="1200.0" style="-fx-background-color: #726f6f;" stylesheets="@../Css_Designs/pane_style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PlayerBoardController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="186.0" prefWidth="1200.0" styleClass="topPane">
+         <children>
+            <ImageView fitHeight="116.0" fitWidth="130.0" layoutX="84.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Cricket_India_Crest.svg.png" />
+               </image>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#eeeaea" />
+               </effect>
+            </ImageView>
+            <ImageView fitHeight="99.0" fitWidth="88.0" layoutX="996.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/Cricket_Australia_Logo.png" />
+               </image>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" color="#f8f5f5" />
+               </effect>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="72.0" layoutY="17.0" prefHeight="26.0" prefWidth="143.0" text="Team India" textAlignment="CENTER" textFill="#f5f2f2">
+               <font>
+                  <Font name="Cambria Bold" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="937.0" layoutY="14.0" prefHeight="32.0" prefWidth="192.0" text="Team Austrelia" textAlignment="CENTER" textFill="#f5f2f2">
+               <font>
+                  <Font name="Cambria Bold" size="26.0" />
+               </font>
+            </Label>
+            <JFXComboBox labelFloat="true" layoutX="412.0" layoutY="21.0" prefHeight="32.0" prefWidth="372.0" promptText="Select Series" visibleRowCount="20" />
+            <JFXComboBox labelFloat="true" layoutX="315.0" layoutY="78.0" prefHeight="32.0" prefWidth="159.0" promptText="Select Match Type" />
+            <JFXComboBox labelFloat="true" layoutX="521.0" layoutY="78.0" prefHeight="32.0" prefWidth="159.0" promptText="Select Location" />
+            <JFXComboBox labelFloat="true" layoutX="725.0" layoutY="78.0" prefHeight="32.0" prefWidth="159.0" promptText="Select Stadium" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="92.0" fitWidth="116.0" layoutX="553.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/1498565080_Coin.png" />
+         </image>
+         <effect>
+            <DropShadow color="#f5f4f4" radius="7.775" spread="0.62" width="12.1" />
+         </effect>
+      </ImageView>
+      <JFXComboBox labelFloat="true" layoutX="521.0" layoutY="244.0" prefHeight="32.0" prefWidth="159.0" promptText="Touch Win" />
+      <JFXComboBox labelFloat="true" layoutX="520.0" layoutY="284.0" prefHeight="32.0" prefWidth="159.0" promptText="Elected To" />
+      <AnchorPane layoutX="14.0" layoutY="176.0" prefHeight="410.0" prefWidth="416.0" styleClass="cardPane">
+         <children>
+            <JFXListView fx:id="Listview_team1" layoutX="13.0" layoutY="11.0" prefHeight="388.0" prefWidth="389.0" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="773.0" layoutY="176.0" prefHeight="410.0" prefWidth="416.0" styleClass="cardPane">
+         <children>
+            <JFXListView fx:id="Listview_team2" layoutX="10.0" layoutY="7.0" prefHeight="394.0" prefWidth="400.0" />
+         </children></AnchorPane>
+      <Pane layoutX="14.0" layoutY="589.0" prefHeight="156.0" prefWidth="416.0" styleClass="cardPane">
+         <children>
+            <JFXComboBox labelFloat="true" layoutX="14.0" layoutY="23.0" prefHeight="32.0" prefWidth="170.0" promptText="Select Captain" />
+            <JFXComboBox labelFloat="true" layoutX="14.0" layoutY="102.0" prefHeight="32.0" prefWidth="170.0" promptText="Select Vice Captain" />
+         </children>
+      </Pane>
+      <Pane layoutX="771.0" layoutY="589.0" prefHeight="156.0" prefWidth="422.0" styleClass="cardPane">
+         <children>
+            <JFXComboBox labelFloat="true" layoutX="21.0" layoutY="100.0" prefHeight="32.0" prefWidth="170.0" promptText="Select Vice Captain" />
+            <JFXComboBox labelFloat="true" layoutX="21.0" layoutY="25.0" prefHeight="32.0" prefWidth="170.0" promptText="Select Captain" />
+         </children>
+      </Pane>
+      <Pane layoutX="459.0" layoutY="470.0" prefHeight="275.0" prefWidth="288.0" styleClass="cardPane">
+         <children>
+            <JFXComboBox labelFloat="true" layoutX="22.0" layoutY="113.0" prefHeight="32.0" prefWidth="170.0" promptText="Second Umpire" />
+            <JFXComboBox labelFloat="true" layoutX="22.0" layoutY="51.0" prefHeight="32.0" prefWidth="170.0" promptText="First Umpire" />
+            <JFXComboBox labelFloat="true" layoutX="22.0" layoutY="174.0" prefHeight="32.0" prefWidth="170.0" promptText="Third Umpire" />
+         </children>
+      </Pane>
+      <JFXDrawer alignment="CENTER_LEFT" layoutX="474.0" layoutY="446.0" prefHeight="49.0" prefWidth="159.0" style="-fx-background-color: #3395e0;">
+         <children>
+            <Label contentDisplay="RIGHT" prefHeight="17.0" prefWidth="106.0" style="-fx-text-fill: #FFFFFF;" text="Umpire">
+               <font>
+                  <Font name="Gadugi" size="31.0" />
+               </font>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </JFXDrawer>
+   </children>
+</AnchorPane>

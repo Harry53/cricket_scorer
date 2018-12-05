@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Cricket_Lover.jnlp">
+  <information>
+    <title>Cricket_Lover</title>
+    <vendor>harish</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Cricket_Lover.jar" size="1586679" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2386350" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Cricket_Lover" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="Controllers.Cricket_Lover"  name="Cricket_Lover" />
+  <update check="always"/>
+</jnlp>

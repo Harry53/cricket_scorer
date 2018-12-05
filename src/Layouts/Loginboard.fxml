@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1024.0" stylesheets="@../Css_Designs/pane_style.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controllers.LoginboardController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="177.0" prefWidth="1029.0" styleClass="topPane" />
+      <AnchorPane layoutX="263.0" layoutY="75.0" prefHeight="556.0" prefWidth="509.0" styleClass="cardPane">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="150.0" layoutX="195.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/profile_2.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txt_username" focusColor="#273d43" labelFloat="true" layoutX="72.0" layoutY="186.0" prefHeight="35.0" prefWidth="371.0" promptText="Enter Username">
+               <font>
+                  <Font name="Constantia Bold" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txt_password" focusColor="#273d43" labelFloat="true" layoutX="72.0" layoutY="282.0" prefHeight="35.0" prefWidth="371.0" promptText="Enter Password">
+               <font>
+                  <Font name="Constantia Bold" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="101.0" layoutY="467.0" prefHeight="43.0" prefWidth="101.0" styleClass="loginbt" text="Login" textFill="#eeebeb">
+               <font>
+                  <Font name="Constantia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="313.0" layoutY="467.0" prefHeight="43.0" prefWidth="101.0" styleClass="clearbt" text="Clear" textFill="#eeebeb">
+               <font>
+                  <Font name="Constantia Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXComboBox fx:id="txt_comboAction" editable="true" focusColor="#273d43" labelFloat="true" layoutX="72.0" layoutY="379.0" onAction="#comboAction" prefHeight="35.0" prefWidth="371.0" promptText="Choose Action" unFocusColor="#4d4d4d" visibleRowCount="5" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
